@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('pexels-fotios-photos-2248589.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Noto Sans Greek', Arial, sans-serif;
+    color: white;
+}
+
+/* Navigation Bar - Fixed at top */
+nav {
+    background: rgba(0, 0, 0, 0.78); /* Black with 78% opacity */
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+nav a {
+    color: gold;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 15px;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid gold;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* Sections */
+.container {
+    background-color: rgba(50, 53, 56, 0.9); 
+    padding: 50px 20px;
+    margin: 120px auto; /* Adds spacing between sections */
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Section Titles */
+h2 {
+    color: gold;
+    font-size: 2.5em; /* Bigger titles */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+/* Make the <h1> larger and bold */
+h1 {
+    color: gold;
+    font-size: 36px;  /* Larger font size */
+    font-weight: bold; /* Bold font */
+}
+
+/* Style the paragraphs in the .owner-section */
+.owner-section p {
+    font-size: 18px;  /* Slightly larger font size for better readability */
+    font-weight: bold; /* Bold font */
+    line-height: 1.6;  /* Adds space between lines for easier reading */
+}
+
+
+
+/* Products */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('pexels-fotios-photos-2248589.jpg') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Noto Sans Greek', Arial, sans-serif;
+    color: white;
+}
+
+/* Navigation Bar - Fixed at top */
+nav {
+    background: rgba(0, 0, 0, 0.78); /* Black with 78% opacity */
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+nav a {
+    color: gold;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 15px;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid gold;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: gold;
+    color: black;
+}
+
+/* Sections */
+.container {
+    background-color: rgba(50, 53, 56, 0.9); 
+    padding: 50px 20px;
+    margin: 120px auto; /* Adds spacing between sections */
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Section Titles */
+h2 {
+    color: gold;
+    font-size: 2.5em; /* Bigger titles */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+/* Make the <h1> larger and bold */
+h1 {
+    color: gold;
+    font-size: 36px;  /* Larger font size */
+    font-weight: bold; /* Bold font */
+}
+
+/* Style the paragraphs in the .owner-section */
+.owner-section p {
+    font-size: 18px;  /* Slightly larger font size for better readability */
+    font-weight: bold; /* Bold font */
+    line-height: 1.6;  /* Adds space between lines for easier reading */
+}
+
+
+
+/* Products */
+.product {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;          /* Larger padding for product box */
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid gold;
+    display: inline-block;
+    width: 50%;             /* Increased width of product box */
+    text-align: center;     /* Center content inside product box */
+}
+
+.product img {
+    width: 100%;            /* Make image responsive */
+    max-width: 700px;       /* Increase max-width for larger images */
+    height: auto;           /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+/* Optional: Make sure the product box text is centered */
+.product p {
+    margin-top: 8px;
+    font-size: 1.1em;       /* Adjust the font size */
+    font-weight: bold;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .product {
+        width: 90%;  /* Make products take up more width on smaller screens */
+    }
+    .product img {
+        max-width: 500px; /* Increase max-width for images on mobile */
+    }
+}
+
+/* Contact */
+#contact img {
+    width: 200px;
+    border-radius: 10px;
+}
