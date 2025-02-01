@@ -1,269 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="el">  
 <head>
-<title>Καλωσορίσατε</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-body {font-family: "Times New Roman", Georgia, Serif;}
-h1, h2, h3, h4, h5, h6 {
-font-family: "Playfair Display";
-letter-spacing: 6px;
-}
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Τσιστράκης Κοσμήματα</title>
+    <link rel="stylesheet" href="style.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Greek&display=swap" rel="stylesheet"> 
 
+    <style>
+        /* Center the container of products */
+        .category {
+            display: flex;
+            flex-direction: column; /* Stack the products vertically */
+            align-items: center;    /* Center the products horizontally */
+            justify-content: center; /* Center vertically, if needed */
+        }
 
-.frame {
-  width: 900px;
-  height: 700px;
-  border:BLACK 2px SOLID;
-  background: #eee;
-  margin: auto;
-  padding: 15px 10px;
-  }
+        /* Ensure each product is stacked vertically with space between them */
+        .category .product {
+            display: block;
+            margin-bottom: 20px; /* Add space between the products */
+            text-align: center;  /* Center the text in each product */
+        }
 
-</style>
+        /* Optional: Adjust images to ensure they're well-sized */
+        .product img {
+            width: 100%;          /* Make images responsive */
+            max-width: 300px;     /* Limit the image width if necessary */
+            height: auto;         /* Maintain aspect ratio */
+        }
+    </style>
 </head>
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button">Τσιστράκης Παναγιώτης</a>
-    <!-- Right-sided navbar links. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">Πληροφορίες για εμένα </a>
-      <a href="#dax" class="w3-bar-item w3-button">Δαχτυλίδια</a>
-      <a href="#sta" class="w3-bar-item w3-button">Σταυροί</a>
-      <a href="#sko" class="w3-bar-item w3-button">Σκουλαρίκια</a>
-      <a href="#ypo" class="w3-bar-item w3-button">Υπόλοιπα-Κοσμήματα</a>
-      <a href="#contact" class="w3-bar-item w3-button">Επικοινωνία</a>
-    </div>
-  </div>
-</div>
+    <!-- Navigation -->
+    <nav>
+        <a href="#owner">Σχετικά με εμάς</a>
+        <a href="#products">Προϊόντα</a>
+        <a href="#contact">Επικοινωνία</a>
+    </nav>
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:1100px">
-
-<!-- About Section -->
-  <div class="w3-row w3-padding-64" id="about">
-      <div class="w3-col m6 w3-padding-large w3-hide-small">
-          <img src="tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="300" height="300">
-      </div>
-
-      <div class="w3-col m6 w3-padding-large">
-          <h1 class="w3-center">Πληροφορίες για εμένα</h1><br>
-          <h5 class="w3-center">ξεκινησα την ταδε ημερομηνια και ειμαι στον χωρο ταδε χρονια  </h5>
-      </div>
-    </div>
-
-
-
-<!-- Δαχτυλίδια -->
-  <div class="w3-row w3-padding-64" id="dax">
-    <div class="w3-col l6 w3-padding-large">
-      <h1 class="w3-center">Δαχτυλίδια</h1><br>
-
-
-
-
-      <div class="frame">
-        <h4>Δαχτυλιδι ΚΩΔΙΚΌΣ:1</h4>
-        <p class="w3-text-grey">Περιγραφή δαχτυλίδι 1</p><br>
-        <p>Δαχτυλιδι ΚΩΔΙΚΌΣ 1231</p>
-        <marquee direction="right"
-          behavior="alternate"
-          style="border:BLACK 2px SOLID">
-          <p>διαθέσιμο</p>
-        </marquee>
-        <img src="1.jpg" alt="4124" width="400" height="400">
-      </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-      <div class="frame">
-        <h4>Δαχτυλιδι ΚΩΔΙΚΌΣ:2</h4>
-        <p class="w3-text-grey">Περιγραφή δαχτυλίδι 2</p><br>
-        <p>Δαχτυλιδι ΚΩΔΙΚΌΣ 4124</p>
-        <marquee direction="right"
-          behavior="alternate"
-          style="border:BLACK 2px SOLID">
-          <p>διαθέσιμο</p>
-        </marquee>
-        <img src="2.jpg" alt="4124" width="400" height="400">
-      </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-    </div>
-
-
-
-
-  </div>
-
-
-
-<!-- σταυροί -->
-  <div class="w3-row w3-padding-64" id="sta">
-    <div class="w3-col l6 w3-padding-large">
-      <h1 class="w3-center">Σταυροί</h1><br>
-
-
-
-
-
-      <div class="frame">
-        <h4>σταυρός ΚΩΔΙΚΌΣ:1</h4>
-        <p class="w3-text-grey">Περιγραφή σταυρος 1</p><br>
-        <p>Δαχτυλιδι ΚΩΔΙΚΌΣ 1231</p>
-        <marquee direction="right"
-          behavior="alternate"
-          style="border:BLACK 2px SOLID">
-          <p>διαθέσιμο</p>
-        </marquee>
-        <img src="1.jpg" alt="4124" width="400" height="400">
-      </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-
-        <div class="frame">
-          <h4>σταυρος ΚΩΔΙΚΌΣ:1</h4>
-          <p class="w3-text-grey">Περιγραφή δαχτυλίδι 1</p><br>
-          <p>Δαχτυλιδι ΚΩΔΙΚΌΣ 1231</p>
-          <marquee direction="right"
-            behavior="alternate"
-            style="border:BLACK 2px SOLID">
-            <p>διαθέσιμο</p>
-          </marquee>
-          <img src="1.jpg" alt="4124" width="400" height="400">
+    <!-- Owner Section -->
+    <div id="owner" class="container">
+        <h1>Εργαστήριο Χρυσοχοΐας - ΠΑΝΑΓΙΩΤΗΣ ΤΣΙΤΡΑΚΗΣ</h1>  
+        <div class="owner-section">
+            <p>
+                Καλώς ήλθατε.
+            </p>
+            <p></p>
+            <p>Το εργαστήριο χρυσοχοΐας του Παναγιώτη Τσιστράκη λειτουργεί από το 1990 και παρέχει πληθώρα κοσμημάτων για όλα τα γούστα.</p>
+            <p>Με την ευκαιρία παραμετροποίησης σχεδίων κατά την προτίμηση του πελάτη</p>
+            <p>και στόχο μας τις ανταγωνιστικές τιμές, μένουμε πάντα η πρώτη σας επιλογή.</p>  
         </div>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-  </div>
-
-
-
-
-  <!-- σκουλαρικια -->
-  <div class="w3-row w3-padding-64" id="sko">
-    <div class="w3-col l6 w3-padding-large">
-      <h1 class="w3-center">Σκουλαρίκια</h1><br>
-
-
-
-
-
-      <div class="frame">
-        <h4>σκουλαρικι ΚΩΔΙΚΌΣ:1</h4>
-        <p class="w3-text-grey">Περιγραφή δαχτυλίδι 1</p><br>
-        <p>Δαχτυλιδι ΚΩΔΙΚΌΣ 1231</p>
-        <marquee direction="right"
-          behavior="alternate"
-          style="border:BLACK 2px SOLID">
-          <p>διαθέσιμο</p>
-        </marquee>
-        <img src="1.jpg" alt="4124" width="400" height="400">
-      </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-
-
     </div>
-    <!-- Υπόλοιπα-->
-    <div class="w3-row w3-padding-64" id="ypo">
-      <div class="w3-col l6 w3-padding-large">
-        <h1 class="w3-center">Υπόλοιπα</h1><br>
 
+    <!-- Products Section -->
+    <div id="products" class="container">
+        <h2>ΚΟΣΜΗΜΑΤΑ</h2>
 
-
-
-
-        <div class="frame">
-          <h4>Υπόλοιπα ΚΩΔΙΚΌΣ:1</h4>
-          <p class="w3-text-grey">Περιγραφή δαχτυλίδι 1</p><br>
-          <p>Δαχτυλιδι ΚΩΔΙΚΌΣ 1231</p>
-          <marquee direction="right"
-            behavior="alternate"
-            style="border:BLACK 2px SOLID">
-            <p>διαθέσιμο</p>
-          </marquee>
-          <img src="1.jpg" alt="4124" width="400" height="400">
+        <!-- Δαχτυλίδια (Rings) Category -->
+        <div class="category">
+            <h3>Δαχτυλίδια</h3>
+            <div class="product">
+                <img src="1.jpg" alt="Δαχτυλίδι">
+                <p><strong>Κωδικός:</strong> R001</p>
+            </div>
+            <div class="product">
+                <img src="2.jpg" alt="Δαχτυλίδι">
+                <p><strong>Κωδικός:</strong> R001</p>
+            </div>
         </div>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
 
+        <!-- Κολιέ (Necklaces) Category -->
+        <div class="category">
+            <h3>Κολιέ</h3>
+            <div class="product">
+                <img src="3.jpg" alt="Κολιέ">
+                <p><strong>Κωδικός:</strong> N002</p>
+            </div>
+        </div>
 
-          <div class="frame">
-            <h4>Δαχτυλιδι ΚΩΔΙΚΌΣ:1</h4>
-            <p class="w3-text-grey">Περιγραφή δαχτυλίδι 1</p><br>
-            <p>Δαχτυλιδι ΚΩΔΙΚΌΣ 1231</p>
-            <marquee direction="right"
-              behavior="alternate"
-              style="border:BLACK 2px SOLID">
-              <p>διαθέσιμο</p>
-            </marquee>
-            <img src="1.jpg" alt="4124" width="400" height="400">
-          </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-      </div>
-</div>
+        <!-- Σταυροί (Crosses) Category -->
+        <div class="category">
+            <h3>Σταυροί</h3>
+            <div class="product">
+                <img src="6.jpg" alt="Σταυρός">
+                <p><strong>Κωδικός:</strong> C003</p>
+            </div>
+        </div>
 
+        <!-- Λοιπά (Others) Category -->
+        <div class="category">
+            <h3>Λοιπά</h3>
+            <div class="product">
+                <img src="5.jpg" alt="-">
+                <p><strong>Κωδικός:</strong> O004</p>
+            </div>
+        </div>
+    </div>
 
-
-
-
-<!-- Contact Section -->
-<div class="w3-container w3-padding-64" id="contact">
-  <h1>Επικοινωνία</h1><br>
-  <p>Μπλα μπλα μπλα γεμισμα</p>
-  <p class="w3-text-blue-grey w3-large"><b>Τοποθεσία Μιλτιάδου , Αθήνα Κέντρο</b></p>
-  <p>κινητό: 6972268335 && σταθερό: 2103247344 </p>
-</div>
-
-<!-- End page content -->
-</div>
-
-
-
-
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-32">
-  <p> created by kaps</p>
-</footer>
-
-
+    <!-- Contact Section -->
+    <div id="contact" class="container">
+        <h2>Επικοινωνία και ώρες λειτουργίας</h2>
+        
+        <p><strong>Ραντεβού μέσω τηλεφωνικής επικοινωνίας.</strong> </p>
+        <p><strong>ΩΡΑΡΙΟ ΛΕΙΤΟΥΡΓΙΑΣ:</strong>
+        <p>Καθημερινές 9:00 - 17:00</p>
+        <p>Σάββατο 10:00 - 14:00</p>
+        <p><strong>Διεύθυνση:</strong> Οδός Mιλτιάδου, Αθήνα</p>
+        <p><strong>Τηλέφωνο:</strong> 210 3247344</p>
+        <p><strong>Κινητό και Viber:</strong> +30 6972268335</p>
+        <p><strong>Τοποθεσία:</strong> Πλησίον σταθμού μετρο Πανεπιστημίου.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d393.11744624814895!2d23.72884257791349!3d37.97853956228818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sel!2s!4v1738429640701!5m2!1sel!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
 </body>
-
 </html>
